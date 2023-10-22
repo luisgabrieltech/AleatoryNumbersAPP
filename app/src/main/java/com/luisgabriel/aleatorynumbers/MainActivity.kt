@@ -3,6 +3,7 @@ package com.luisgabriel.aleatorynumbers
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.random.Random
 
@@ -20,13 +21,8 @@ class MainActivity : AppCompatActivity() {
             val numeroAleatorio = Random.nextInt(21)
             resultadogeradornumero.text = "Numero gerado: $numeroAleatorio"
 
-        //val mensagemGerador = Toast.makeText( this, "O Número foi gerado!", Toast.LENGTH_LONG )
-        //mensagemGerador.show()
+        val mensagemGerador = Toast.makeText( this, "O Número foi gerado!", Toast.LENGTH_LONG )
+        mensagemGerador.show()
         }
     }
-
-    class Dice () {
-
-    }
-
 }
